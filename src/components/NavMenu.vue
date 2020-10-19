@@ -8,11 +8,11 @@
         @close="handleClose">
         <el-menu-item index="1">
           <i class="el-icon-menu"></i>
-          <span slot="title">列表</span>
+          <span slot="title">操作列表</span>
         </el-menu-item>
         <el-menu-item index="2">
           <i class="el-icon-menu"></i>
-          <span slot="title">时间线</span>
+          <span slot="title">操作线路</span>
         </el-menu-item>
       </el-menu>
     </el-col>

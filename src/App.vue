@@ -8,8 +8,9 @@
         <navmenu />
       </el-aside>
       <el-container>
-        <el-main>Main</el-main>
-        <!--<el-footer>Footer</el-footer>-->
+        <el-main>
+          <opterList />
+        </el-main>
       </el-container>
     </el-container>
   </el-container>
@@ -19,11 +20,13 @@
 <script>
 import NavMenu from "./components/NavMenu";
 import Header from "./components/Header";
+import OpterList from "./components/OpterList";
 export default {
   name: 'App',
   components: {
-  'navmenu':NavMenu,
-    'vheader':Header
+    'navmenu':NavMenu,
+    'vheader':Header,
+    'opterList':OpterList
   },
 }
 </script>

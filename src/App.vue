@@ -9,7 +9,7 @@
       </el-aside>
       <el-container>
         <el-main>
-          <opterList />
+          <router-view></router-view>
         </el-main>
       </el-container>
     </el-container>
@@ -20,13 +20,11 @@
 <script>
 import NavMenu from "./components/NavMenu";
 import Header from "./components/Header";
-import OpterList from "./components/OpterList";
 export default {
   name: 'App',
   components: {
     'navmenu':NavMenu,
     'vheader':Header,
-    'opterList':OpterList
   },
 }
 </script>
@@ -37,7 +35,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  /*color: #2c3e50;*/
   margin-top: 60px;
 }
 .el-header, .el-footer {

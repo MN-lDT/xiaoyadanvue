@@ -6,7 +6,10 @@
         class="el-menu-vertical-demo"
         @open="handleOpen"
         @close="handleClose"
-        @select="handleSelect">
+        @select="handleSelect"
+        background-color="#545c64"
+        text-color="#fff"
+      >
         <el-menu-item index="1">
           <i class="el-icon-edit-outline"></i>
           <span slot="title">出库入库</span>
@@ -47,5 +50,6 @@ name: "NavMenu",
 </script>
 
 <style scoped>
+
 
 </style>

@@ -4,7 +4,7 @@
       <vheader />
     </el-header>
     <el-container>
-      <el-aside width="200px">
+      <el-aside width="200px" class="nav" >
         <navmenu />
       </el-aside>
       <el-container>
@@ -53,10 +53,16 @@ export default {
 }
 
 .header {
-  background-color: #409EFF;
-  color: #fff;
+  background-color: #fff;
+  color: #409EFF;
   line-height: 60px;
 }
+
+.nav {
+  background-color: #545c64;
+  border-style: none;
+}
+
 
 
 .el-main {

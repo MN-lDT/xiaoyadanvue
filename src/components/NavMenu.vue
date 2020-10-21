@@ -13,12 +13,14 @@
         <el-menu-item index="1">
           <i class="el-icon-edit-outline"></i>
           <span slot="title">出库入库</span>
-
         </el-menu-item>
         <el-menu-item index="2">
           <i class="el-icon-document-copy"></i>
           <span slot="title">详细列表</span>
-
+        </el-menu-item>
+        <el-menu-item index="3">
+          <i class="el-icon-s-custom"></i>
+          <span slot="title">用户管理</span>
         </el-menu-item>
       </el-menu>
     </el-col>
@@ -37,10 +39,19 @@ name: "NavMenu",
     },
     handleSelect(index,indexPath) {
       if (index === "1") {
-        this.$router.push({name:"opterList"})
+        if(this.$route.path !== '/opterList'){
+          this.$router.push({name:"opterList"})
+        }
       }
       if (index === "2") {
-        this.$router.push({name:"listDetail"})
+        if(this.$route.path !== '/listDetail'){
+          this.$router.push({name:"listDetail"})
+        }
+      }
+      if (index === "3") {
+        if(this.$route.path !== '/userList'){
+          this.$router.push({name:"userList"})
+        }
       }
 
       console.log(index, indexPath);

@@ -1,36 +1,15 @@
 <template>
 
-<div v-if="this.$route.path === '/'">
-  <router-view></router-view>
-</div>
-  <div v-else>
-
-    <el-container>
-      <el-header class="header">
-        <vheader />
-      </el-header>
-      <el-container>
-        <el-aside width="200px" class="nav" >
-          <navmenu />
-        </el-aside>
-        <el-container>
-          <el-main>
-            <router-view></router-view>
-          </el-main>
-        </el-container>
-      </el-container>
-    </el-container>
-  </div>
-
-
 </template>
 
 <script>
-import NavMenu from "./components/NavMenu";
-import Header from "./components/Header";
-import LoginIndex from "./components/LoginIndex";
+
+import NavMenu from "./NavMenu";
+import Header from "./Header";
+import LoginIndex from "./LoginIndex";
+
 export default {
-  name: 'App',
+  name: "HomePage",
   components: {
     'navmenu':NavMenu,
     'vheader':Header,
@@ -39,15 +18,7 @@ export default {
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  /*color: #2c3e50;*/
-  margin-top: 60px;
-}
+<style >
 .el-header, .el-footer {
   background-color: #B3C0D1;
   color: #333;

@@ -1,5 +1,5 @@
 <template>
-<div >
+<div style="width: 100%;">
   <div style="width: 70%;margin: 0 auto;margin-top: 10px;line-height: 50px;background-color: white">
     <div style="width: 100%;margin: 0 auto;padding-top: 20px">
       <el-form label-width="80px">

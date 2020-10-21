@@ -1,6 +1,7 @@
 <template>
 <div style="width: 100%;">
-  <div style="width: 70%;margin: 0 auto;margin-top: 10px;line-height: 50px;background-color: white">
+  <div style="width: 1000px;margin: 0 auto;margin-top: 10px;
+  line-height: 50px;background-color: white;padding-left: 5px;padding-right: 5px">
     <div style="width: 100%;margin: 0 auto;padding-top: 20px">
       <el-form label-width="80px">
         <div style="width: 100%;height: 50px;margin-top: 10px">
@@ -58,44 +59,62 @@
     </div>
   </div>
 
-  <div style="width: 70%;margin: 0 auto;margin-top: 30px;line-height: 50px;background-color: white">
-    <div>
-      <el-table
-        :data="tableData"
-        style="width: 100%"
-        :row-class-name="tableRowClassName">
-        <el-table-column
-          prop="createDate"
-          label="操作时间"
-          width="180"
-        >
-        </el-table-column>
-        <el-table-column
-          prop="username"
-          label="操作人"
-          width="180">
-        </el-table-column>
-        <el-table-column
-          prop="type"
-          label="操作类型">
-        </el-table-column>
-        <el-table-column
-          prop="addCount"
-          label="入库数量">
-        </el-table-column>
-        <el-table-column
-          prop="cutQpCount"
-          label="出库青皮数量">
-        </el-table-column>
-        <el-table-column
-          prop="cutKdCount"
-          label="出库烤蛋数量">
-        </el-table-column>
-        <el-table-column
-          prop="remark"
-          label="备注">
-        </el-table-column>
-      </el-table>
+  <div style="width: 1000px;margin: 0 auto;margin-top: 30px;line-height: 50px;
+  background-color: white;padding-right: 5px;padding-left: 5px">
+    <div style="padding-top: 5px">
+      <div style="height: 80px;width: 100%;background-color: #F2F6FC;">
+        <div class="huizong">
+          入库汇总：<span class="huizongnum">8000</span>
+        </div>
+        <div class="huizong">
+            出库青皮汇总：<span class="huizongnum">5000</span>
+        </div>
+        <div class="huizong">
+            出库烤蛋汇总：<span class="huizongnum">3000</span>
+        </div>
+      </div>
+      <div>
+        <el-table
+          :data="tableData"
+          style="width: 100%"
+          :row-class-name="tableRowClassName">
+          <el-table-column
+            prop="createDate"
+            label="操作时间"
+            width="180"
+          >
+          </el-table-column>
+          <el-table-column
+            prop="username"
+            label="操作人"
+            width="120">
+          </el-table-column>
+          <el-table-column
+            prop="type"
+            label="操作类型"
+            width="120">
+          </el-table-column>
+          <el-table-column
+            prop="addCount"
+            label="入库数量"
+            width="120">
+          </el-table-column>
+          <el-table-column
+            prop="cutQpCount"
+            label="出库青皮数量"
+            width="120">
+          </el-table-column>
+          <el-table-column
+            prop="cutKdCount"
+            label="出库烤蛋数量"
+            width="120">
+          </el-table-column>
+          <el-table-column
+            prop="remark"
+            label="备注">
+          </el-table-column>
+        </el-table>
+      </div>
     </div>
     <div style="width: 98%;margin-left: 20px;margin-top: 20px">
       <el-pagination
@@ -217,6 +236,16 @@ export default {
 </script>
 
 <style >
-
-
+.huizong {
+  float: left;
+  width: 30%;
+  font-size: 20px;
+  line-height: 100px;
+  color: #606266;
+  text-align: left;
+}
+.huizongnum {
+  color: #409EFF;
+  font-weight: bold;
+}
 </style>

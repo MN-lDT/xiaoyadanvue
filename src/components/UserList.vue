@@ -1,6 +1,6 @@
 <template>
 <div >
-  <div style="width: 70%;margin: 0 auto;background-color: white;padding-top: 20px;padding-bottom: 20px;height: 300px">
+  <div style="width: 1000px;margin: 0 auto;background-color: white;padding-top: 20px;padding-bottom: 20px;height: 300px">
     <div style="width: 40%;height: 100%;margin-left: 30px">
       <div style="width: 100%;height: 50px;text-align: center;font-size: 20px;font-weight: bold;line-height: 70px;color: #606266">
          注册账户
@@ -25,12 +25,12 @@
       </div>
     </div>
   </div>
-  <div style="width: 70%;margin: 0 auto;background-color: white;margin-top:20px;padding-top: 20px;padding-bottom: 20px;height: 500px;line-height: 40px">
+  <div style="width: 1000px;margin: 0 auto;background-color: white;margin-top:20px;padding-top: 20px;padding-bottom: 20px;height: 500px;line-height: 40px">
     <template>
       <el-table
         :data="tableData"
         border
-        style="width: 75%;margin-left: 30px">
+        style="width: 90%;margin-left: 30px">
         <el-table-column
           prop="date"
           label="日期"

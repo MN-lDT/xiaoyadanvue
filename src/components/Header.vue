@@ -2,10 +2,10 @@
   <el-row>
     <el-col :span="24">
       <div class="head-wrap" style="">
-        <div style="width: 82%;float: left;height: 70px">
-          <h2 style="margin-top: -6px">鸭蛋入库出库系统</h2>
+        <div style="width: 70%;float: left;height: 70px;">
+          <div style="font-size: 30px;font-weight: bold;text-align: left">鸭蛋入库出库系统</div>
         </div>
-        <div style="float:left;width: 10%;margin-left: 120px">
+        <div style="float:left;width: 20%;margin-left: 120px">
           <div style="float:left;width: 32%;margin-top: 7px;margin-left: 10px">
             <img src="static/image/admin.jpg" style="width: 35px;height: auto">
           </div>

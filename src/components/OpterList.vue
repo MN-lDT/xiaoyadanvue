@@ -1,8 +1,8 @@
 <template>
 <div style="width: 100%;height: 820px">
-  <div style="width: 70%;height:350px;margin: 0 auto;overflow: hidden">
+  <div style="width: 1000px;height:350px;margin: 0 auto;overflow: hidden">
     <div style="width: 48%;height:100%;float: left;background-color: white;padding-top: 30px">
-      <div style="width: 60%;height: 100%;margin: 0 auto">
+      <div style="width: 90%;height: 100%;margin: 0 auto">
         <el-form :model="ruleForm" status-icon :rules="rules"  label-width="100px" class="demo-ruleForm" >
           <el-form-item label="入库数量" >
             <el-input  oninput="value=value.replace(/[^0-9.]/g,'')" v-model="ruleForm.rkCount" placeholder="请输入数字" ></el-input>
@@ -29,10 +29,10 @@
       </div>
     </div>
     <div style="width: 50%;height:100%;float: right;background-color: white;padding-top: 30px">
-      <div style="width: 100%;height: 70%;margin: 0 auto;margin-left: 200px;line-height: 70px">
-        <el-row :gutter="12">
-          <el-col :span="8">
-            <el-card shadow="hover">
+      <div style="width: 100%;height: 70%;margin: 0 auto;margin-left: 200px;line-height: 70px;">
+        <el-row :gutter="12" >
+          <el-col :span="8" >
+            <el-card shadow="hover" style="background-color: #F2F6FC;color: #606266">
               当前库中数量：<br>
               <h2>50</h2>
             </el-card>

@@ -73,7 +73,7 @@ export default {
         window.sessionStorage.setItem('token', res.data.token)*/
         console.log(window.vM)
 
-        this.$router.push('/listDetail')
+        this.$router.push('/opterList')
       })
     },
     onReset() {

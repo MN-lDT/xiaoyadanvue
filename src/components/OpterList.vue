@@ -29,10 +29,10 @@
       </div>
     </div>
     <div style="width: 50%;height:100%;float: right;background-color: white;padding-top: 30px">
-      <div style="width: 100%;height: 70%;margin: 0 auto;margin-left: 200px;line-height: 70px;">
+      <div style="width: 100%;height: 70%;margin: 0 auto;margin-left:100px;line-height: 70px;margin-top: 20px">
         <el-row :gutter="12" >
           <el-col :span="8" >
-            <el-card shadow="hover" style="background-color: #F2F6FC;color: #606266">
+            <el-card shadow="hover" style="background-color: #F2F6FC;color: #606266;width: 300px">
               当前库中数量：<br>
               <h2>50</h2>
             </el-card>

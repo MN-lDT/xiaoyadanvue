@@ -4,8 +4,7 @@
   <router-view></router-view>
 </div>
   <div v-else>
-
-    <el-container>
+    <el-container >
       <el-header class="header">
         <vheader />
       </el-header>
@@ -13,8 +12,8 @@
         <el-aside width="200px" class="nav" >
           <navmenu />
         </el-aside>
-        <el-container>
-          <el-main>
+        <el-container  >
+          <el-main class="content-el">
             <router-view></router-view>
           </el-main>
         </el-container>
@@ -60,6 +59,10 @@ export default {
   color: #333;
   text-align: center;
   line-height: 200px;
+}
+
+.content-el {
+  background-image: url("../static/image/bgimg.jpg");
 }
 
 .header {
